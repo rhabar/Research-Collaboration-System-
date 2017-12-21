@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="184*"/>
+            <ColumnDefinition Width="333*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="518" Source="c:\users\user\documents\visual studio 2015\Projects\WpfApplication2\WpfApplication2\Picture\Traveling-solo.jpg" Stretch="Fill" Margin="-1,0,0,0" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="User name" HorizontalAlignment="Left" Margin="97,83,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="97,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.623,0.638" Grid.Column="1"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="22" Margin="177,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="146" TextChanged="textBox_TextChanged" Grid.Column="1"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Left" Margin="177,122,0,0" VerticalAlignment="Top" Width="146" Grid.Column="1"/>
+        <Button x:Name="button" Content="Login" HorizontalAlignment="Left" Margin="193,156,0,0" VerticalAlignment="Top" Width="53" Click="button_Click" RenderTransformOrigin="0.5,0.5" Background="#FFA6B5C3" Grid.Column="1">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.041"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="button1" Content="Don't have an account &#xD;&#xA;Click to create !!!" HorizontalAlignment="Left" Margin="97,194,0,0" VerticalAlignment="Top" Width="226" Background="{x:Null}" Foreground="#FFFBF7F7" Click="button1_Click" Grid.Column="1"/>
+
     </Grid>
 </Window>
